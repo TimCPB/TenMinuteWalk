@@ -5,10 +5,6 @@ var west = 0
 
 function isTenMinuteWalk(array) {
   _parseDirections(array)
-  console.log(`north = ${north}`)
-  console.log(`south = ${south}`)
-  console.log(`east = ${east}`)
-  console.log(`west = ${west}`)
   if(array.length === 10 && north === south && east === west){
     _resetDirections()
     return true
@@ -41,3 +37,4 @@ function _resetDirections(){
   east = 0
   west = 0
 }
+
