@@ -3,5 +3,18 @@ function isTenMinuteWalk(array) {
     return false
     }
   else
-   return true
+  //  return true
+   
+   var northSouth = 0
+   var eastWest = 0
+
+   array.forEach(function (direction) {
+     if(direction === 'n' || direction === 's'){
+       northSouth++
+      }
+     else
+     eastWest++
+    })
+     console.log(northSouth)
+   
 }
