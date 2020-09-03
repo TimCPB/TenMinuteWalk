@@ -7,4 +7,8 @@ describe("isTenMinuteWalk", function() {
   it("returns false if walk is less than 10 minutes", function() {
     expect(isTenMinuteWalk(array1)).toEqual(false)
   })
+
+  it("returns true if a walk is exactly 10 minutes", function() {
+    expect(isTenMinuteWalk(array2)).toEqual(true)
+  })
 })
