@@ -1,0 +1,3 @@
+function isTenMinuteWalk() {
+  return false
+}
