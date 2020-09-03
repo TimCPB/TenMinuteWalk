@@ -1,28 +1,26 @@
 function isTenMinuteWalk(array) {
-  // if(array.length !== 10){
-  //   return false
-  //   }
-  // else
-  //  return true
-   
-   var northSouth = []
-   var eastWest = []
+  var north = 0
+  var south = 0
+  var east = 0
+  var west = 0
 
-   array.forEach(function (direction) {
-     if(direction === 'n' || direction === 's'){
-       northSouth++
+  array.forEach(function (direction) {
+    if(direction === 'n'){
+      north++
       }
-     else
-     eastWest++
-    })
-     console.log(`northSouth is ${northSouth}`)
-     console.log(`eastWest is ${eastWest}`)
-
-
-     if(array.length === 10 && northSouth % 2 === 0 && eastWest % 2 === 0){
-       return true
-     }
-     else
-      return false
+    else if(direction === 's'){
+      south++
+    }
+    else if(direction === 'e'){
+      east++
+    }
+    else
+      west++
+      })
+    if(array.length === 10 && north === south && east === west){
+      return true
+    }
+    else
+     return false
    
 }
