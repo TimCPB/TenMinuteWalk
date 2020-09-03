@@ -11,4 +11,8 @@ describe("isTenMinuteWalk", function() {
   it("returns true if a walk is exactly 10 minutes", function() {
     expect(isTenMinuteWalk(array2)).toEqual(true)
   })
+
+  it("returns false if the walk doesn't return to starting point", function() {
+    expect(isTenMinuteWalk(array3)).toEqual(false)
+  })
 })
